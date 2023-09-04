@@ -1,0 +1,590 @@
+// footer start
+.footer {
+    & .footer-logo {
+       height: 30px;
+    }
+    & .footer-btn {
+        font-size: 16px;
+        color: $white;
+    }
+    & .create-account {
+        color: $white;
+        background-color: $theme1;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: lighten($theme1, 20) !important;
+        }
+    }
+    & .join-community {
+        font-size: 20px;
+        color: $white;
+    }
+    & .footer-title {
+        font-size: 14px;
+    }
+    & .main-links {
+        & .main-link-heading {
+            font-size: 18px;
+            color: $white;
+        }
+        & .main-link {
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                background-color: $white;
+                height: 2px;
+                transform: translate(0, -50%);
+                width: 12px;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 9px;
+                background-color: $theme1;
+                height: 6px;
+                width: 6px;
+                border-radius: 50%;
+                transform: translate(0, -50%);
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                color: $theme1 !important;
+                transform: translateX(10px);
+                &::before {
+                    opacity: 1;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    & .top-btn {
+        height: 40px;
+        width: 40px;
+        top: 1%;
+        right: 5%;
+        & .top-btnicon {
+            transform: rotate(-90deg);
+        }
+    }
+    & .footer-socialicon {
+        height: 30px;
+        width: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    & .copyright {
+        font-size: 14px;
+    }
+}
+// footer media query end
+// Small devices (landscape phones, 576px and up)
+@mixin footer-mixin-min-sm() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin footer-mixin-min-md() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin footer-mixin-min-lg() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin footer-mixin-min-xl() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin footer-mixin-min-xxl() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin footer-mixin-max-xs() {
+    .footer {
+        & .footer-logo {
+            height: 25px;
+        }
+        & .footer-btn {
+            font-size: 14px;
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+            font-size: 16px;
+        }
+        & .footer-title {
+            font-size: 12px;
+        }
+        & .main-links {
+            & .main-link-heading {
+                font-size: 15px;
+            }
+            & .main-link {
+                font-size: 12px;
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            height: 30px;
+            width: 30px;
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            height: 20px;
+            width: 20px;
+            &:hover {
+            }
+        }
+        & .copyright {
+            font-size: 11px;
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin footer-mixin-max-sm() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+            font-size: 16px;
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+            font-size: 17px;
+        }
+        & .footer-title {
+            font-size: 13px;
+        }
+        & .main-links {
+            & .main-link-heading {
+                font-size: 16px;
+            }
+            & .main-link {
+                font-size: 13px;
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            height: 35px;
+            width: 35px;
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            height: 25px;
+            width: 25px;
+            &:hover {
+            }
+        }
+        & .copyright {
+            font-size: 12px;
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin footer-mixin-max-md() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+            font-size: 18px;
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+                font-size: 17px;
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+            font-size: 13px;
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin footer-mixin-max-lg() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin footer-mixin-max-xl() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin footer-mixin-max-1300() {
+    .footer {
+        & .footer-logo {
+        }
+        & .footer-btn {
+        }
+        & .create-account {
+            &:hover {
+            }
+        }
+        & .join-community {
+        }
+        & .footer-title {
+        }
+        & .main-links {
+            & .main-link-heading {
+            }
+            & .main-link {
+                &::before {
+                }
+                &::after {
+                }
+                &:hover {
+                    &::before {
+                    }
+                    &::after {
+                    }
+                }
+            }
+        }
+        & .top-btn {
+            & .top-btnicon {
+            }
+        }
+        & .footer-socialicon {
+            &:hover {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// footer media query end
+// footer end

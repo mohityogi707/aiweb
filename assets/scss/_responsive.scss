@@ -1,0 +1,223 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  @include navbar-mixin-min-sm();
+  @include btn-mixin-min-sm();
+  @include heading-mixin-min-sm();
+  @include main-mixin-min-sm();
+  @include hero-mixin-min-sm();
+  @include rating-mixin-min-sm();
+  @include aiwriter-mixin-min-sm();
+  @include aigenerate-mixin-min-sm();
+  @include gpt-mixin-min-sm();
+  @include aiblogeditor-mixin-min-sm();
+  @include textohelp-mixin-min-sm();
+  @include testimonal-mixin-min-sm();
+  @include price-mixin-min-sm();
+  @include faq-mixin-min-sm();
+  @include footer-mixin-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include navbar-mixin-min-md();
+  @include btn-mixin-min-md();
+  @include heading-mixin-min-md();
+  @include main-mixin-min-md();
+  @include hero-mixin-min-md();
+  @include rating-mixin-min-md();
+  @include aiwriter-mixin-min-md();
+  @include aigenerate-mixin-min-md();
+  @include gpt-mixin-min-md();
+  @include aiblogeditor-mixin-min-md();
+  @include textohelp-mixin-min-md();
+  @include testimonal-mixin-min-md();
+  @include price-mixin-min-md();
+  @include faq-mixin-min-md();
+  @include footer-mixin-min-md();
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include navbar-mixin-min-lg();
+  @include btn-mixin-min-lg();
+  @include heading-mixin-min-lg();
+  @include main-mixin-min-lg();
+  @include hero-mixin-min-lg();
+  @include rating-mixin-min-lg();
+  @include aiwriter-mixin-min-lg();
+  @include aigenerate-mixin-min-lg();
+  @include gpt-mixin-min-lg();
+  @include aiblogeditor-mixin-min-lg();
+  @include textohelp-mixin-min-lg();
+  @include testimonal-mixin-min-lg();
+  @include price-mixin-min-lg();
+  @include faq-mixin-min-lg();
+  @include footer-mixin-min-lg();
+  
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include navbar-mixin-min-xl();
+  @include btn-mixin-min-xl();
+  @include heading-mixin-min-xl();
+  @include main-mixin-min-xl();
+  @include hero-mixin-min-xl();
+  @include rating-mixin-min-xl();
+  @include aiwriter-mixin-min-xl();
+  @include aigenerate-mixin-min-xl();
+  @include gpt-mixin-min-xl();
+  @include aiblogeditor-mixin-min-xl();
+  @include textohelp-mixin-min-xl();
+  @include testimonal-mixin-min-xl();
+  @include price-mixin-min-xl();
+  @include faq-mixin-min-xl();
+  @include footer-mixin-min-xl();
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include navbar-mixin-min-xxl();
+  @include btn-mixin-min-xxl();
+  @include heading-mixin-min-xxl();
+  @include main-mixin-min-xxl();
+  @include hero-mixin-min-xxl();
+  @include rating-mixin-min-xxl();
+  @include aiwriter-mixin-min-xxl();
+  @include aigenerate-mixin-min-xxl();
+  @include gpt-mixin-min-xxl();
+  @include aiblogeditor-mixin-min-xxl();
+  @include textohelp-mixin-min-xxl();
+  @include testimonal-mixin-min-xxl();
+  @include price-mixin-min-xxl();
+  @include faq-mixin-min-xxl();
+  @include footer-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  @include navbar-mixin-max-xl();
+  @include btn-mixin-max-xl();
+  @include heading-mixin-max-xl();
+  @include main-mixin-max-xl();
+  @include hero-mixin-max-xl();
+  @include rating-mixin-max-xl();
+  @include aiwriter-mixin-max-xl();
+  @include aigenerate-mixin-max-xl();
+  @include gpt-mixin-max-xl();
+  @include aiblogeditor-mixin-max-xl();
+  @include textohelp-mixin-max-xl();
+  @include testimonal-mixin-max-xl();
+  @include price-mixin-max-xl();
+  @include faq-mixin-max-xl();
+  @include footer-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1300px)
+@media (max-width: 1299.98px) {
+  @include navbar-mixin-max-1300();
+  @include btn-mixin-max-1300();
+  @include heading-mixin-max-1300();
+  @include main-mixin-max-1300();
+  @include hero-mixin-max-1300();
+  @include rating-mixin-max-1300();
+  @include aiwriter-mixin-max-1300();
+  @include aigenerate-mixin-max-1300();
+  @include gpt-mixin-max-1300();
+  @include aiblogeditor-mixin-max-1300();
+  @include textohelp-mixin-max-1300();
+  @include testimonal-mixin-max-1300();
+  @include price-mixin-max-1300();
+  @include faq-mixin-max-1300();
+  @include footer-mixin-max-1300();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include navbar-mixin-max-lg();
+  @include btn-mixin-max-lg();
+  @include heading-mixin-max-lg();
+  @include main-mixin-max-lg();
+  @include hero-mixin-max-lg();
+  @include rating-mixin-max-lg();
+  @include aiwriter-mixin-max-lg();
+  @include aigenerate-mixin-max-lg();
+  @include gpt-mixin-max-lg();
+  @include aiblogeditor-mixin-max-lg();
+  @include textohelp-mixin-max-lg();
+  @include testimonal-mixin-max-lg();
+  @include price-mixin-max-lg();
+  @include faq-mixin-max-lg();
+  @include footer-mixin-max-lg();
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include navbar-mixin-max-md();
+  @include btn-mixin-max-md();
+  @include heading-mixin-max-md();
+  @include main-mixin-max-md();
+  @include hero-mixin-max-md();
+  @include rating-mixin-max-md();
+  @include aiwriter-mixin-max-md();
+  @include aigenerate-mixin-max-md();
+  @include gpt-mixin-max-md();
+  @include aiblogeditor-mixin-max-md();
+  @include textohelp-mixin-max-md();
+  @include testimonal-mixin-max-md();
+  @include price-mixin-max-md();
+  @include faq-mixin-max-md();
+  @include footer-mixin-max-md();
+ 
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include navbar-mixin-max-sm();
+  @include btn-mixin-max-sm();
+  @include heading-mixin-max-sm();
+  @include main-mixin-max-sm();
+  @include hero-mixin-max-sm();
+  @include rating-mixin-max-sm();
+  @include aiwriter-mixin-max-sm();
+  @include aigenerate-mixin-max-sm();
+  @include gpt-mixin-max-sm();
+  @include aiblogeditor-mixin-max-sm();
+  @include textohelp-mixin-max-sm();
+  @include testimonal-mixin-max-sm();
+  @include price-mixin-max-sm();
+  @include faq-mixin-max-sm();
+  @include footer-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include navbar-mixin-max-xs();
+  @include btn-mixin-max-xs();
+  @include heading-mixin-max-xs();
+  @include main-mixin-max-xs();
+  @include hero-mixin-max-xs();
+  @include rating-mixin-max-xs();
+  @include aiwriter-mixin-max-xs();
+  @include aigenerate-mixin-max-xs();
+  @include gpt-mixin-max-xs();
+  @include aiblogeditor-mixin-max-xs();
+  @include textohelp-mixin-max-xs();
+  @include testimonal-mixin-max-xs();
+  @include price-mixin-max-xs();
+  @include faq-mixin-max-xs();
+  @include footer-mixin-max-xs();
+}
+
+// less than 420px
+@media (max-width: 420px) {
+  @include gpt-mixin-max-420px();
+  @include hero-mixin-max-420px();
+}
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width

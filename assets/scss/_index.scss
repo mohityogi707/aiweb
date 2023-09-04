@@ -1,0 +1,4984 @@
+// hero-section
+.hero-section {
+    background-color: lighten($danger, 44);
+    & .hero-left {
+        & .heroinput {
+            height: 39px;
+        }
+        & .or {
+            min-width: 190px;
+            font-size: 14px;
+            color: $theme2;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width:42%;
+                height: 2px;
+                border: 1px solid $theme2;
+                background-color: $theme2;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width:42%;
+                height: 2px;
+                border: 1px solid $theme2;
+                background-color: $theme2;
+            }
+        }
+    }
+    & .hero-right {
+        & .rating {
+            & .pen-nib {
+                height: 50px;
+                width: 50px;
+                background-color: $theme1;
+            }
+            & .hero-heading-1 {
+                font-size: 16px;
+                color: $theme2;
+            }
+            & .cratars {
+                font-size: 12px;
+            }
+            & .star {
+                height: 11px;
+                width: 11px;
+            }
+        }
+        & .texto-result {
+            min-height: 300px;
+            max-width: 300px;
+            & .texto-result-heading {
+                background: $theme2;
+                color: $white;
+                font-size: 16px;
+            }
+            & .texto-content {
+                & .texto-icon {
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+           
+        }
+        & .texto-result-2 {
+            margin-top:-10rem;
+            & .texto-result2-content{
+                min-height: 300px;
+                max-width: 300px;
+                & .texto-result-heading {
+                    color: $theme1;
+                    background-color: $theme2;
+                    font-size: 16px;
+                    line-height: normal;
+                    & .texto-content {
+                        color: $white;
+                        font-size: 12px;
+                    }
+                }
+                & .product-heading {
+                    font-size: 14px;
+                }
+                & .formm {
+                    font-size: 12px;
+                }
+                & .generate-btn {
+                    font-size: 12px;
+                }
+            }
+         
+        }
+    }
+}
+   
+// hero section media quary start
+// Small devices (landscape phones, 576px and up)
+@mixin hero-mixin-min-sm() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin hero-mixin-min-md() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin hero-mixin-min-lg() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin hero-mixin-min-xl() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin hero-mixin-min-xxl() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// max width 420 px()
+@mixin hero-mixin-max-420px {
+    .hero-section {
+        & .hero-left {
+            & .orline {
+                text-align: center;
+                & .or {
+                    &::before {
+             
+                    }
+                    &::after {
+                 
+                    }
+                }
+            }
+            
+            & .btninput-group {
+                flex-direction: column;
+                gap: 15px;
+                & .email-input {
+                }
+                & .btn-hero {
+                    width: 100%;
+                }
+            }
+            & .google-btn {
+                width: 100%;
+            }
+           
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin hero-mixin-max-xs() {
+    .hero-section {
+        & .hero-left {
+            & .heroinput {
+                height: 31px;
+            }
+
+            & .or {
+                font-size: 12px;
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                    height: 35px;
+                    width: 35px;
+                }
+                & .hero-heading-1 {
+                  font-size: 12px;
+                }
+                & .cratars {
+                    font-size: 10px;
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+                & .texto-result-heading {
+                    font-size: 12px;
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+
+                & .texto-result2-content{
+                    max-width: 250px;
+                    & .texto-result-heading {
+                      font-size: 12px;
+                        & .texto-content {
+                           font-size: 10px;
+                        }
+                    }
+                    & .product-heading {
+                      font-size: 12px;
+                    }
+                    & .formm {
+                       font-size: 10px;
+                    }
+                    & .generate-btn {
+                       font-size: 10px;
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin hero-mixin-max-sm() {
+       .hero-section {
+        & .hero-left {
+            & .heroinput {
+                height: 35px;
+            }
+            & .or {
+                font-size: 13px;
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                    height: 40px;
+                     width: 40px;
+                }
+                & .hero-heading-1 {
+                  font-size: 13px;
+                }
+                & .cratars {
+                    font-size: 11px;
+                }
+                & .star {
+                    height: 8px;
+                    width: 8px;
+                }
+            }
+            & .texto-result {
+                & .texto-result-heading {
+                    font-size: 13px;
+                }
+                & .texto-content {
+                    & .texto-icon {
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+            }
+            & .texto-result-2 {
+
+                & .texto-result2-content{  
+
+                    & .texto-result-heading {  
+                        font-size: 13px;
+                        & .texto-content {     
+                        }
+                    }
+                    & .product-heading {  
+                        font-size: 13px;
+                    }
+                    & .formm {  
+                        font-size: 11px;
+                    }
+                    & .generate-btn {  
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin hero-mixin-max-md() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                    height: 45px;
+                    width: 45px;
+                }
+                & .hero-heading-1 {
+                  font-size: 14px;
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                    font-size: 14px;
+                }
+                & .texto-content {
+                    font-size: 11px;
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      font-size: 14px;
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin hero-mixin-max-lg() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  font-size: 15px;
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                    font-size: 15px;
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      font-size: 15px;
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin hero-mixin-max-xl() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin hero-mixin-max-1300() {
+    .hero-section {
+        & .hero-left {
+            & .or {
+                &::before {
+         
+                }
+                &::after {
+             
+                }
+            }
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
+// hero section media query end
+
+
+// rating section start
+.rating-captera {
+    & .rating-main-icon {
+        height: 45px;
+    }
+    & .rating-title {
+        font-size: 18px;
+        color: $theme2;
+    }
+
+}
+
+// rating section media query start
+// Small devices (landscape phones, 576px and up)
+@mixin rating-mixin-min-sm() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin rating-mixin-min-md() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin rating-mixin-min-lg() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin rating-mixin-min-xl() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin rating-mixin-min-xxl() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin rating-mixin-max-xs() {
+    .rating-captera {
+        & .rating-main-icon {
+            height: 30px;
+        }
+        & .rating-title {
+            font-size: 14px;
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin rating-mixin-max-sm() {
+    .rating-captera {
+        & .rating-main-icon {
+            height: 35px;
+        }
+        & .rating-title {
+            font-size: 15px;
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin rating-mixin-max-md() {
+    .rating-captera {
+        & .rating-main-icon {
+            height: 40px;
+        }
+        & .rating-title {
+            font-size: 16px;
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin rating-mixin-max-lg() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+            font-size: 17px;
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin rating-mixin-max-xl() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin rating-mixin-max-1300() {
+    .rating-captera {
+        & .rating-main-icon {
+        }
+        & .rating-title {
+        }
+    }
+}
+// rating section media query end
+
+// ai writer
+.ai-writer-main {
+    & .ai-writer {
+        background: lighten($success, 62);
+    }
+    & .ai-writer-left {
+        & .page-count {
+            font-size: 12px;
+            background: lighten($success, 50) ;
+            color: $theme2;
+            height: 30px;
+            width: 30px;
+        }
+    }
+    & .ai-writer-right {
+        & .social-media {
+            max-width: 280px;
+            & .ads {
+                font-size: 16px;
+                color: $theme2;
+                & .ad-icon {
+                    max-height: 14px;
+                    max-width: 14px;
+                }
+            }
+            & .ai-writer-socialicon {
+                transform: scale(1.2);
+            }
+            & .line {
+                background-color: $theme1;
+                color: $theme1;
+                border:  1px solid $theme1;
+                height: 1px;
+            }
+            & .ai-social-icon {
+                height: 20px;
+                width: 20px;
+            }
+            & .ai-content {
+                font-size: 14px;
+                color:lighten($black,20);
+                & .yellow-checkicon {
+                    height: 12px;
+                    width: 12px;
+                    border:1px solid $theme1;
+                    & .yellow-checkimg {
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+        & .ai-workspace {
+            background: lighten($primary, 38) ;
+            max-width: 220px;
+            & .ai-workspace-title{
+                font-size: 11px;
+                margin-right: -12px;
+                color: $theme3;
+                margin-left: 12px;
+            }
+            // & .placeholder {
+            //     height: 10px;
+            // }
+        }
+    }
+}
+
+// ai writer section media query start
+// Small devices (landscape phones, 576px and up)
+@mixin aiwriter-mixin-min-sm() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin aiwriter-mixin-min-md() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin aiwriter-mixin-min-lg() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin aiwriter-mixin-min-xl() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin aiwriter-mixin-min-xxl() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin aiwriter-mixin-max-xs() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                max-width: 230px;
+                & .ads {
+                    font-size: 13px;
+                    & .ad-icon {
+                        width: 12px;
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                    height: 18px;
+                    width: 18px;
+                }
+                & .ai-content {
+                    font-size: 11px;
+                    & .yellow-checkicon {
+                        height: 11px;
+                        width: 11px;
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin aiwriter-mixin-max-sm() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    font-size: 14px;
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    font-size: 12px;
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin aiwriter-mixin-max-md() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    font-size: 15px;
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    font-size: 13px;
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin aiwriter-mixin-max-lg() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin aiwriter-mixin-max-xl() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin aiwriter-mixin-max-1300() {
+    .ai-writer-main {
+        & .ai-writer {
+        }
+        & .ai-writer-left {
+            & .page-count {
+            }
+        }
+        & .ai-writer-right {
+            & .social-media {
+                & .ads {
+                    & .ad-icon {
+                    }
+                }
+                & .ai-writer-socialicon { 
+                }
+                & .line { 
+                }
+                & .ai-social-icon {  
+                }
+                & .ai-content {
+                    & .yellow-checkicon {
+                        & .yellow-checkimg {
+                        }
+                    }
+                }
+            }
+            & .ai-workspace {
+                & .ai-workspace-title{ 
+                }
+            }
+        }
+    }
+}
+// ai writer section media query end
+
+
+// ai-generate
+.ai-generate {
+    & .ai-generate-left {
+        background-color: lighten($danger, 44);
+        & .ai-count {
+            font-size: 12px;
+            height: 30px;
+            width: 30px;
+            background-color:lighten($danger, 40);
+        }
+        & .ai-generate-blog {
+            max-width: 300px;
+            & .blog-heading {
+                font-size: 14px;
+            }
+            & .blog-content {
+                font-size: 12px;
+                color:$theme2;
+            }
+            & .blog-content-2 {
+                font-size: 12px;
+                color: lighten($black,45);
+            }
+            & .generate-btn {
+                font-size: 13px;
+                color: $theme1;
+            }
+            & .blog-contentthree {
+                font-size: 10px;
+                white-space: nowrap;
+            }
+        }
+      & .complete-project-main {
+        max-width: 300px;
+        & .complete-project-content {
+            background-color: lighten($danger, 44);
+            & .count-project {
+                font-size: 14px;
+                color: $theme2;
+            }
+            & .complete-project-title {
+                font-size: 10px;
+                color:  lighten($black, 30);
+            }
+            & .project-icon {
+                background-color: $white;
+                height: 9px;
+                width: 9px;
+                box-shadow: 0 -1px 0 $theme1;
+            }
+        }
+        & .complete-project-img {
+            height: 30px;
+            width: 30px;
+            background: lighten($success,62);
+            & .complete-project-img-inner {
+                height: 13px;
+                width: 13px;
+                & .check-icon {
+                    padding: 2px;
+                }
+            }
+        }
+        & .complete-project-img-2 {
+            height: 30px;
+            width: 30px;
+            background-color: $theme1;
+            & .check-icon {
+                padding: 8px;
+            }
+        }
+      }
+    }
+    & .ai-generate-right {
+        background:lighten($danger, 44) ;
+        & .aigenerateplaceh {
+            max-width: 400px;
+            & .yellowdots {
+                height: auto;
+                width: 28px;
+            }
+        }
+        
+        & .up-arrow {
+            height: 45px;
+            width: 45px;
+            top: 30%;
+            right: -5%;
+            background-color: $theme1;
+        }
+        & .page-count {
+            height: 28px;
+            width: 28px;
+            background:lighten($danger, 40);
+            font-size: 12px;
+        }
+    }
+}
+
+// ai generate section media query start
+@mixin aigenerate-mixin-min-sm() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin aigenerate-mixin-min-md() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin aigenerate-mixin-min-lg() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin aigenerate-mixin-min-xl() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin aigenerate-mixin-min-xxl() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin aigenerate-mixin-max-xs() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                    font-size: 12px;
+                }
+                & .blog-content {
+                    font-size: 10px;
+                }
+                & .blog-content-2 {
+                    font-size: 10px;
+                }
+                & .generate-btn {
+                    font-size: 11px;
+                }
+                & .blog-contentthree {
+                    font-size: 9px;
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                    font-size: 12px;
+                }
+                & .complete-project-title {
+                    font-size: 9px;
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                height: 25px;
+                width: 25px;
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                height: 25px;
+                width: 25px;
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+                height: 35px;
+                width: 35px;
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin aigenerate-mixin-max-sm() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                    font-size: 13px;
+                }
+                & .blog-content {
+                    font-size: 11px;
+                }
+                & .blog-content-2 {
+                    font-size: 11px;
+                }
+                & .generate-btn {
+                    font-size: 12px;
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                    font-size: 13px;
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+                height: 40px;
+                width: 40px;
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin aigenerate-mixin-max-md() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .airightmain {
+           padding:0;
+           & .ai-generate-right {
+            
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+        }
+       
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin aigenerate-mixin-max-lg() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin aigenerate-mixin-max-xl() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin aigenerate-mixin-max-1300() {
+    .ai-generate {
+        & .ai-generate-left {
+            & .ai-count {
+            }
+            & .ai-generate-blog {
+                & .blog-heading {
+                }
+                & .blog-content {
+                }
+                & .blog-content-2 {
+                }
+                & .generate-btn {
+                }
+                & .blog-contentthree {
+                }
+            }
+          & .complete-project-main {
+            & .complete-project-content { 
+                & .count-project {
+                }
+                & .complete-project-title {
+                }
+                & .project-icon {
+                }
+            }
+            & .complete-project-img {
+                & .complete-project-img-inner {
+                    & .check-icon {
+                    }
+                }
+            }
+            & .complete-project-img-2 {
+                & .check-icon {
+                }
+            }
+          }
+        }
+        & .ai-generate-right {
+            & .yellowdots {
+            }
+            & .up-arrow {
+            }
+            & .page-count {
+            }
+        }
+    }
+}
+// ai generate section media query end
+
+
+// gpt-3 section start
+.gpt-takes {
+    & .gpt-takes-left {
+        & .gap-title {
+            color: lighten($black,50);
+        }
+    }
+    & .gpt-takes-right {
+        background: lighten($info, 46);
+        & .content-generate {
+            max-width: 300px;
+            min-height: 300px;
+            & .content-generate-heading {
+                font-size: 16px;
+                background-color: $theme2;
+                color: $theme1; 
+                & .close-icon {
+                    height: 10px;
+                    width: 10px;
+                }
+            }
+            & .content-generate-headingtwo {
+                font-size: 10px;
+                color: lighten($black,30);
+            }
+            & .Choosetopic {
+                & .Choosetopic-tabline {
+                    height: 5px;
+                    width: 80%;
+                }
+            }
+            & .select-length {
+                & .length-line {
+                    height: 4px;
+                    width: 75px;
+                }
+            }
+        }
+        & .export-btn2 {
+            left: -20%;
+            bottom: -18%;
+            & .generate-export {
+                max-width: 280px;
+                & .generate-export-heading {
+                    background-color: $theme2;
+                }
+                & .generate-btnmain {
+                    top: -15%;
+                    left: -22%;
+                    & .generate-btn {
+                    background-color: $theme1;
+                    font-size: 14px;
+                    color: $theme2;
+                    }
+                    & .arrowImg {
+                        left:8px;
+                        top: 27px;
+                        max-height: 60px;
+                        width: 50px;
+                     }
+                }
+                & .export-btnmain {
+                    bottom: -11%;
+                   right: -19%;
+                      & .export-btn {
+                    background-color: $theme1;
+                    font-size: 10px;
+                    color: $theme2;
+                }
+                }
+            }
+        }
+       
+    }
+}
+
+//  gpt-3 section media query start 
+// Small devices (landscape phones, 576px and up)
+@mixin gpt-mixin-min-sm() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin gpt-mixin-min-md() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin gpt-mixin-min-lg() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin gpt-mixin-min-xl() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin gpt-mixin-min-xxl() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// (less than 420)
+@mixin gpt-mixin-max-420px {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+           & .export-btn2 {
+            left: -8%;
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+           }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin gpt-mixin-max-xs() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                max-width: 250px;
+                & .content-generate-heading {
+                    font-size: 12px;
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+           & .export-btn2 {
+            & .generate-export {
+                max-width: 230px;
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                        font-size: 9px;
+                }
+                }
+            }
+           }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin gpt-mixin-max-sm() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    font-size: 14px;
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                        font-size: 11px;
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin gpt-mixin-max-md() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    font-size: 15px;
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+           & .export-btn2 {
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                        font-size: 11px;
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+           }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin gpt-mixin-max-lg() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin gpt-mixin-max-xl() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin gpt-mixin-max-1300() {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+        }
+    }
+}
+
+//  gpt-3 section media query end 
+// gpt-3 section end
+
+
+// ai-blogeditor section start
+.ai-blogeditor {
+    & .ai-blogeditor-left {
+        background-color:   lighten($info, 46);
+        & .blog-projectmain {
+            max-width: 300px;
+            min-height: 300px;
+            & .methods {
+                font-size: 16px;
+                color: $white;
+                 & .close-icon {
+                    height: 12px;
+                    width: 12px;
+                 }
+            }
+            & .blog-project {
+                & .blog-project-heading {
+                    font-size: 12px;
+                    color: $theme1;
+                    background-color: $theme2;
+                }
+                & .blog-project-title {
+                    font-size: 11px;
+                    color: lighten($black, 20);
+                }
+            }
+        }
+    
+      & .after-textoresult-main {
+        right: -45%;
+        & .after-textoresult {
+            max-width: 300px;
+            & .after-textoresult-heading { 
+                font-size: 15px;
+                color:$white;
+                background-color: $theme2;
+           }
+           & .after-textoresult-headingtwo {
+               font-size: 14px;
+               & .after-textoresult-headingtwo-icon {
+                height: 20px;
+                width: 20px;
+                padding: 4px;
+                border: 2px solid $theme1;
+               }
+           }
+           & .after-textoresult-content {
+               font-size: 12px;
+               line-height: 12px;
+               color: $theme2;
+           }
+       }
+      }
+    }
+    & .ai-blogeditor-right {
+        & .ai-blogeditorright-title {
+            color: lighten($black, 50);
+        }
+        & .read-more {
+            color: $theme2;
+            font-size: 14px;
+            border-bottom: 2px solid $theme2;
+            &:hover {
+                & .right-arrow {
+                    // margin-left: 10px !important;
+                    transform: translateX(4px);
+                }
+            }
+            & .right-arrow {
+                height: 14px;
+                width: 14px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+// .ai-blogeditor section media query start
+// Small devices (landscape phones, 576px and up)
+@mixin aiblogeditor-mixin-min-sm() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin aiblogeditor-mixin-min-md() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin aiblogeditor-mixin-min-lg() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin aiblogeditor-mixin-min-xl() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin aiblogeditor-mixin-min-xxl() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin aiblogeditor-mixin-max-xs() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                max-width: 250px;
+                & .methods {
+                    font-size: 13px;
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                        font-size: 10px;
+                    }
+                    & .blog-project-title {
+                        font-size: 9px;
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            right: -28%;
+            & .after-textoresult {
+                max-width: 230px;
+                & .after-textoresult-heading { 
+                    font-size: 13px;
+               }
+               & .after-textoresult-headingtwo {
+                font-size: 12px;
+                   & .after-textoresult-headingtwo-icon {
+                    height: 15px;
+                    width: 15px;
+                   }
+               }
+               & .after-textoresult-content {
+                font-size: 10px;
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin aiblogeditor-mixin-max-sm() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                    font-size: 14px;
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                        font-size: 11px;
+                    }
+                    & .blog-project-title {
+                        font-size: 10px;
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+                    font-size: 14px;
+               }
+               & .after-textoresult-headingtwo {
+                font-size: 13px;
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+                font-size: 11px;
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin aiblogeditor-mixin-max-md() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                    font-size: 15px;
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            right: -45%;
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin aiblogeditor-mixin-max-lg() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            right: -28%;
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin aiblogeditor-mixin-max-xl() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin aiblogeditor-mixin-max-1300() {
+    .ai-blogeditor {
+        & .ai-blogeditor-left {
+            & .blog-projectmain {
+                & .methods {
+                     & .close-icon {
+                     }
+                }
+                & .blog-project {
+                    & .blog-project-heading {
+                    }
+                    & .blog-project-title {
+                    }
+                }
+            }
+        
+          & .after-textoresult-main {
+            & .after-textoresult {
+                & .after-textoresult-heading { 
+               }
+               & .after-textoresult-headingtwo {
+                   & .after-textoresult-headingtwo-icon {
+                   }
+               }
+               & .after-textoresult-content {
+               }
+           }
+          }
+        }
+        & .ai-blogeditor-right {
+            & .ai-blogeditorright-title {
+            }
+            & .read-more {
+                &:hover {
+                    & .right-arrow {
+                    }
+                }
+                & .right-arrow {
+                }
+            }
+        }
+    }
+}
+// .ai-blogeditor section media query end
+
+// ai-blogeditor section end
+
+
+// texto-help section start
+.texto-help {
+    & .view-all {
+        font-size: 20px;
+        color: $white;
+        &:hover {
+           & .view-allicon {
+            transform: translateX(5px);
+           }
+        }
+        & .view-allicon {
+            transition: all  0.3s ease-in-out;
+        }
+    }
+    & .textohelp-nav {
+        & .navbar-brand {
+            height: 40px;
+            & .nav-logo {
+                filter: invert(1);
+            }
+        }
+        & .navbar-toggler-icon {
+            font-size: 15px;
+        }
+        & .textohelp-offcanvas {
+            height: 60%;
+            & .nav-link {
+                font-size: 14px;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $theme2;
+                }
+            }
+            & .createaccount-btn {
+                color: $white !important;
+                // &:hover {
+                //     color: $black !important;
+                //     background-color: lighten($black,99) !important;
+                // }
+            }
+        }
+    }
+    & .textohelp-content {
+        & .textohelp-rightarrow {
+            height: 18px;
+            width: 18px;
+        }
+        & .textohelp-content-heading {
+            font-size: 16px;
+            color: $white;
+        }
+        & .textohelp-content-title {
+            font-size: 14px;
+            color: lighten($black, 70);
+            line-height: 17px;
+        }
+    }
+}
+
+// texto help section media query start 
+// Small devices (landscape phones, 576px and up)
+@mixin textohelp-mixin-min-sm() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin textohelp-mixin-min-md() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin textohelp-mixin-min-lg() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin textohelp-mixin-min-xl() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin textohelp-mixin-min-xxl() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin textohelp-mixin-max-xs() {
+    // .texto-help {
+    //     & .view-all {
+    //         font-size: 16px;
+    //     }
+    //     & .textohelp-nav {
+    //         & .navbar-brand {
+    //             height: 35px;
+    //             & .nav-logo {
+    //             }
+    //         }
+    //         & .textohelp-offcanvas {
+    //             & .nav-link {
+    //                 font-size: 11px;
+    //                 &:hover {
+    //                 }
+    //             }
+    //             & .createaccount-btn {
+    //             }
+    //         }
+    //     }
+    //     & .textohelp-content {
+    //         & .textohelp-rightarrow {
+    //         }
+    //         & .textohelp-content-heading {
+    //             font-size: 13px;
+    //             padding-top: 2px;
+    //         }
+    //         & .textohelp-content-title {
+    //             font-size: 11px;
+    //         }
+    //     }
+    // }
+    .texto-help {
+        & .view-all {
+            font-size: 16px;
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    font-size: 11px;
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+                font-size: 13px;
+                padding-top: 2px;
+            }
+            & .textohelp-content-title {
+                font-size: 11px;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin textohelp-mixin-max-sm() {
+    .texto-help {
+        & .view-all {
+            font-size: 18px;
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                z-index: 1222;
+                & .nav-link {
+                    font-size: 12px;
+                    color: $black;
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                    background: lighten($black, 50) !important;
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+                font-size: 14px;
+            }
+            & .textohelp-content-title {
+                font-size: 12px;
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin textohelp-mixin-max-md() {
+    .texto-help {
+        & .view-all {
+            font-size: 19px;
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    font-size: 12px;
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+                font-size: 15px;
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin textohelp-mixin-max-lg() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin textohelp-mixin-max-xl() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin textohelp-mixin-max-1300() {
+    .texto-help {
+        & .view-all {
+        }
+        & .textohelp-nav {
+            & .navbar-brand {
+                & .nav-logo {
+                }
+            }
+            & .textohelp-offcanvas {
+                & .nav-link {
+                    &:hover {
+                    }
+                }
+                & .createaccount-btn {
+                }
+            }
+        }
+        & .textohelp-content {
+            & .textohelp-rightarrow {
+            }
+            & .textohelp-content-heading {
+            }
+            & .textohelp-content-title {
+            }
+        }
+    }
+}
+// texto help section media query start 
+// texto-help section end
+
+
+// testimonal section start
+.testimonal {
+    & .client-carousel {
+        & .user-card {
+            & .about-client {
+                font-size: 16px;
+                line-height: 21px;
+                color:$black;
+            }
+            & .rating-title {
+                font-size: 14px;
+                color: $theme2;
+            }
+            & .slash {
+                font-size: 18px;
+                & span{
+                    transform: rotate(19deg);
+                    color: lighten($secondary,10);
+                }
+            }
+            & .user-data {
+                & .user-img {
+                    width: 35px;
+                    height: 35px;
+                }
+                & .user-name {
+                    font-size: 18px;
+                    color: $theme2;
+                }
+                & .user-position {
+                    font-size: 16px;
+                    color:$black;
+                }
+            }
+        }
+        & .owl-nav {
+            position: absolute;
+            top: -55%;
+            right: 5%;
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            & .owl-prev {
+                color: $theme2;
+                border:2px solid $theme1;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px !important;
+                &:active {
+                    background-color: $theme1;
+                }
+            }
+            & .owl-next {
+                color: $theme2;
+                border:2px solid $theme1;
+                background-color: $theme1;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                padding: 12px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:active {
+                    background-color:$theme1
+                }
+            }
+
+        }
+        & .owl-dots  {
+           align-items: center;
+           justify-content: center;
+           gap: 6px;
+           margin-top: 10px;
+            display: none;
+            & .owl-dot span {
+                width: 10px;
+                height: 10px;
+                background: $theme1!important;
+                display: block;
+                border-radius: 30px;
+                &:active {
+                    background:lighten($black,70) !important;
+            }
+        }
+        }
+   
+}
+}
+//  testimonal media query start
+// Small devices (landscape phones, 576px and up)
+@mixin testimonal-mixin-min-sm() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                 & .owl-dot span {
+                     &:active {
+                 }
+             }
+             }
+        }
+       
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin testimonal-mixin-min-md() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin testimonal-mixin-min-lg() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin testimonal-mixin-min-xl() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin testimonal-mixin-min-xxl() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin testimonal-mixin-max-xs() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                    font-size: 13px;
+                }
+                & .slash {
+                }
+                & .rating-title {
+                    font-size: 12px;
+                }
+                & .user-data {
+                    & .user-img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    & .user-name {
+                        font-size: 14px;
+                    }
+                    & .user-position {
+                        font-size: 12px;
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin testimonal-mixin-max-sm() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                    font-size: 14px;
+                }
+                & .slash {
+                }
+                & .rating-title {
+                    font-size: 13px;
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                        font-size: 16px;
+                    }
+                    & .user-position {
+                        font-size: 14px;
+                    }
+                }
+            }
+            & .owl-nav {
+                display: none;
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                display: flex;
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin testimonal-mixin-max-md() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                    font-size: 15px;
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                        font-size: 17px;
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin testimonal-mixin-max-lg() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin testimonal-mixin-max-xl() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin testimonal-mixin-max-1300() {
+    .testimonal {
+        & .client-carousel {
+            & .user-card {
+                & .about-client {
+                }
+                & .slash {
+                }
+                & .rating-title {
+                }
+                & .user-data {
+                    & .user-img {
+                    }
+                    & .user-name {
+                    }
+                    & .user-position {
+                    }
+                }
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    &:active {
+                    }
+                }
+                & .owl-next {
+                    &:active {
+                    }
+                }
+    
+            }
+            & .owl-dots  {
+                & .owl-dot span {
+                    &:active {
+                }
+            }
+            }
+        }
+       
+    }
+}
+//  testimonal media query end
+// testimonal section end
+
+
+// pricing section start
+.price-section {
+    & .check-btn {
+        & .time {
+            font-size: 16px;
+            color: $black;
+        }
+        & .form-switch {
+            & .form-check-input {
+                height: 20px;
+                width: 40px;
+                background-repeat: no-repeat;
+                --bs-form-switch-bg:url(../img/Index/radioicon.svg);
+                &:checked {
+                    border-color: $theme1;
+                    background-color: $theme1;
+                    background-image: url(../img/Index/radiowhiteicon.svg);
+                }
+                &:focus {
+                    border-color: lighten($black, 90);
+                    // background-image: none;
+                    // background:url(../img/Index/radioicon.svg);
+                }
+            }
+        }
+    }
+    & .pricing-card {
+        & .price-heading {
+            font-size: 25px;
+            color: $theme2;
+        }
+        & .price {
+            font-size: 30px;
+            & .time {
+                font-size: 14px;
+                color: lighten($black, 30);
+            }
+        }
+        & .priceheading2 {
+            font-size: 28px;
+        }
+        & .pricing-content {
+            font-size: 16px;
+            color: lighten($black, 30);
+        }
+        & .try-btn {
+            font-size: 16px;
+            transition: all 0.3s ease-in;
+            &:hover {
+                background-color: $theme1;
+                color: $theme2 !important;
+            }
+        } 
+        & .days {
+            font-size: 14px;
+            color: $theme2;
+        }
+    }
+}
+ 
+// pricing section media query start
+// Small devices (landscape phones, 576px and up)
+@mixin price-mixin-min-sm() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin price-mixin-min-md() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin price-mixin-min-lg() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin price-mixin-min-xl() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin price-mixin-min-xxl() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin price-mixin-max-xs() {
+    .price-section {
+        & .check-btn {
+            & .time {
+                font-size: 13px;
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+                font-size: 18px;
+            }
+            & .priceheading2 {
+                font-size: 22px;
+            }
+            & .price {
+                font-size: 22px;
+                & .time {
+                    font-size: 12px;
+                }
+            }
+            & .pricing-content {
+                font-size: 14px;
+            }
+            & .try-btn {
+                font-size: 14px;
+            } 
+            & .days {
+                font-size: 12px;
+            }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin price-mixin-max-sm() {
+    .price-section {
+        & .check-btn {
+            & .time {
+                font-size: 14px;
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+                font-size: 20px;
+            }
+            & .priceheading2 {
+                font-size: 24px;
+            }
+            & .price {
+                font-size: 24px;
+                & .time {
+                    font-size: 13px;
+                }
+            }
+            & .pricing-content {
+                font-size: 15px;
+            }
+            & .try-btn {
+                font-size: 15px;
+            } 
+            & .days {
+                font-size: 13px;
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin price-mixin-max-md() {
+    .price-section {
+        & .check-btn {
+            & .time {
+                font-size: 15px;
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+                font-size: 22px;
+            }
+            & .priceheading2 {
+                font-size: 26px;
+            }
+            & .price {
+                font-size: 26px;
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin price-mixin-max-lg() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin price-mixin-max-xl() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin price-mixin-max-1300() {
+    .price-section {
+        & .check-btn {
+            & .time {
+            }
+            & .form-switch {
+                & .form-check-input {
+                    &:checked {
+                    }
+                }
+            }
+        }
+        & .pricing-card {
+            & .price-heading {
+            }
+            & .price {
+                & .time {
+                }
+            }
+            & .pricing-content {
+            }
+            & .try-btn {
+            } 
+            & .days {
+            }
+        }
+    }
+}
+// pricing section media query end
+// pricing section end 
+
+
+// faq section start
+.faq-section {
+    & .question {
+        & .accordion-item {
+            & .accordion-button {
+                font-size: 16px;
+                color: $black;
+                &::after {
+                    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+                    height: 15px;
+                    width: 15px;
+                    background-size: cover;
+                     background-position: center;
+                  }
+                  &:not(.collapsed)::after {
+                    background: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+                     height: 15px;
+                     width: 15px;
+                     background-size: cover;
+                     background-position: center;
+                  }
+                  &:not(.collapsed) {
+                    background-color: $white ;
+                    color: $black;
+                  }
+            }
+            & .accordion-body {
+                font-size: 14px;
+                color: $black;
+            }
+        }
+    }
+}
+
+// faq sectioon media query start
+// Small devices (landscape phones, 576px and up)
+@mixin faq-mixin-min-sm() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin faq-mixin-min-md() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin faq-mixin-min-lg() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin faq-mixin-min-xl() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin faq-mixin-min-xxl() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin faq-mixin-max-xs() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    font-size: 12px;
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+ // Small devices (landscape phones, less than 768px)
+@mixin faq-mixin-max-sm() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    font-size: 15px;
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin faq-mixin-max-md() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin faq-mixin-max-lg() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin faq-mixin-max-xl() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@mixin faq-mixin-max-1300() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                  
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// faq sectioon media query end
+//  faq section end

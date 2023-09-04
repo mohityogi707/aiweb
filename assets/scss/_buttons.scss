@@ -1,0 +1,243 @@
+.custom-btn {
+    font-size: 14px;
+    background: $theme1;
+    color:$theme2;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    &:hover {
+        background-color:lighten($theme1,20);
+        color: $theme2;
+    }
+    &:focus {
+        background-color:lighten($theme1,20);
+        color: $theme2;
+    }
+    &:active {
+        background-color:lighten($theme1,20) !important;
+        color: $theme2 !important;
+    }
+}
+
+.custom-btn-2 {
+    font-size: 14px;
+    background: $theme2;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    & .google-logo {
+        max-height: 20px;
+        max-width: 20px;
+    }
+    &:hover {
+        background-color:lighten($black,40);
+        color: $white;
+    }
+    &:active {
+        background-color:lighten($black,40) !important ;
+        color: $white !important;
+    }
+}
+ 
+
+// Small devices (landscape phones, 576px and up)
+@mixin btn-mixin-min-sm() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin btn-mixin-min-md() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin btn-mixin-min-lg() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin btn-mixin-min-xl() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin btn-mixin-min-xxl() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin btn-mixin-max-xs() {
+    .custom-btn {
+        font-size: 10px;
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        font-size: 10px;
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+ // Small devices (landscape phones, less than 768px)
+@mixin btn-mixin-max-sm() {
+    .custom-btn {
+        font-size: 12px;
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        font-size: 12px;
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin btn-mixin-max-md() {
+    .custom-btn {
+        font-size: 13px;
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        font-size: 13px;
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin btn-mixin-max-lg() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin btn-mixin-max-xl() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
+
+// Large devices (desktops, less than 1300px)
+@mixin btn-mixin-max-1300() {
+    .custom-btn {
+        &:hover {
+        }
+        &:focus {
+        }
+        &:active {
+        }
+    }
+    .custom-btn-2 {
+        & .google-logo {
+        }
+        &:hover {
+        }
+    }
+}
